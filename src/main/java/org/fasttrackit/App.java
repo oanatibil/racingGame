@@ -10,7 +10,12 @@ public class App
 {
     public static void main( String[] args )
     {
-        Car car = new Car();
+        Engine engine = new Engine();
+        engine.capacity = 1500;
+        engine.manufacturer = "Renault";
+        engine.expiryDate = LocalDateTime.now().minusYears(10);
+
+        Car car = new Car(engine);
         car.name = "Dacia";
         car.color = "white";
         car.doorCount = 4;
@@ -19,14 +24,12 @@ public class App
 
         car.engine = new Engine(); // relatie de tip has-a //
 
-        Engine engine = new Engine();
-        engine.capacity = 1500;
-        engine.manufacturer = "Renault";
-        engine.expiryDate = LocalDateTime.now().minusYears(10);
-
         car.engine = engine; //atribuim engine la car//
 
-        Car car2 = new Car();
+        Engine engine2 = new Engine();
+        engine2.capacity = 1200;
+        engine.manufacturer = "BMW";
+        Car car2 = new Car(engine2);
 
         engine = null;
 
