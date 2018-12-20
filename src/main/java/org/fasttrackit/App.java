@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import java.time.LocalDateTime;
+
 /**
  * Hello world!
  *
@@ -20,12 +22,20 @@ public class App
         Engine engine = new Engine();
         engine.capacity = 1500;
         engine.manufacturer = "Renault";
+        engine.expiryDate = LocalDateTime.now().minusYears(10);
 
         car.engine = engine; //atribuim engine la car//
 
         Car car2 = new Car();
 
         engine = null;
+
+        //facem prima masina sa accelereze//
+
+        double carTraveledDistance
+                = car.accelerate(100, 2);
+
+
 
 
     }
