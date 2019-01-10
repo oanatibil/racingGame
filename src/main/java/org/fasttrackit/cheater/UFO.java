@@ -13,5 +13,16 @@ public class UFO extends Vehicle {
         }
 
     public void concealCheating() {
-    }
+        System.out.println("I'm not cheating!");
+}
+//Override
+    //Example of co-variant return type
+
+    // example of extending acces priveleges in overriden method
+
+    public UFO clone(){
+        return new UFO();
+}
+
+
 }

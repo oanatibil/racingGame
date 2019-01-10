@@ -74,9 +74,7 @@ Vehicle.vehicleCount = 3;
 
     }
 
-    public void concealCheating() {
-        System.out.println("I'm not cheating!");
 
     }
 
-}
+
