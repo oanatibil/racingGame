@@ -60,5 +60,23 @@ Vehicle.vehicleCount = 3;
    vehicle1.accelerate (34.12);
     vehicle2.accelerate (34.12, 0.8);
     new UFO().accelerate (130, 0.8);
+
+
+    //polymrphism (an object can take multiple forms)
+    Vehicle ufo = new UFO();
+
+    //The type of the variable does not deterine the object's behaviour
+    ufo.accelerate (200, 2);
+
+    //the type of the variable determines what methods can be invoked
+        //We might need type casting (see below)
+        ((UFO) ufo).concealCheating();
+
     }
+
+    public void concealCheating() {
+        System.out.println("I'm not cheating!");
+
+    }
+
 }
