@@ -18,6 +18,16 @@ public class Vehicle {
         double traveledDistance = speed * durationInHours;
         System.out.println("Traveled distance:" + traveledDistance + "km");
         return traveledDistance;
+
+    }
+//example of method overloading
+    public double accelerate (double speed) {
+
+        //System.out.println(name + "accelerated with " + speed + " km/h for " + 1 + " hours.");
+        //double traveledDistance = speed * 1;
+        //System.out.println("Traveled distance:" + traveledDistance + "km");
+        //return traveledDistance;
+    return accelerate (speed, 1);
     }
 
     public String getName() {

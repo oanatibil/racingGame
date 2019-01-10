@@ -51,5 +51,10 @@ Vehicle.vehicleCount = 3;
         System.out.println("Value from vehicle 1 :" + vehicle1.vehicleCount);
         System.out.println("Value from vehicle 2 :" + vehicle2.vehicleCount);
         System.out.println("Value from vehicle class :" + Vehicle.vehicleCount);
+
+   new AutoVehicle(new Engine ());
+
+   vehicle1.accelerate (34.12);
+    vehicle2.accelerate (34.12, 0.8);
     }
 }
