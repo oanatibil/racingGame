@@ -2,9 +2,15 @@ package org.fasttrackit;
 
 public class Vehicle {
 
+    public static int vehicleCount;
+
    private String name;
    private String color;
    private double mileage;
+
+    public Vehicle() {
+        vehicleCount++;
+    }
 
     //declarare metoda://
     public double accelerate(double speed, double durationInHours) {
@@ -37,4 +43,6 @@ public class Vehicle {
     public void setMileage(double mileage) {
         this.mileage = mileage;
     }
+
+
 }
