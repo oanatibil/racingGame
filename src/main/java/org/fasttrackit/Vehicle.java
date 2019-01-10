@@ -22,7 +22,6 @@ public class Vehicle {
     }
 //example of method overloading
     public double accelerate (double speed) {
-
         //System.out.println(name + "accelerated with " + speed + " km/h for " + 1 + " hours.");
         //double traveledDistance = speed * 1;
         //System.out.println("Traveled distance:" + traveledDistance + "km");
@@ -54,5 +53,12 @@ public class Vehicle {
         this.mileage = mileage;
     }
 
-
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", mileage=" + mileage +
+                '}';
+    }
 }

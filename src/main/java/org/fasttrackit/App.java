@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import org.fasttrackit.cheater.UFO;
+
 import java.time.LocalDateTime;
 
 /**
@@ -10,17 +12,18 @@ public class App
 {
     public static void main( String[] args )
     {
-//        Engine engine = new Engine();
-//        engine.capacity = 1500;
-//        engine.manufacturer = "Renault";
-//        engine.expiryDate = LocalDateTime.now().minusYears(10);
-//
-//        Car car = new Car(engine);
-//        car.setName( "Dacia");
-//        car.setColor ("white");
-//        car.doorCount = 4;
-//        car.setMileage (7.5);
-//        car.running = true;
+        Engine engine = new Engine();
+        engine.capacity = 1500;
+        engine.manufacturer = "Renault";
+        engine.expiryDate = LocalDateTime.now().minusYears(10);
+
+        Car car = new Car(engine);
+        car.setName( "Dacia");
+        car.setColor ("white");
+        car.doorCount = 4;
+        car.setMileage (7.5);
+        car.running = true;
+        System.out.println(car.toString());
 //        System.out.println(car.getName());
 //
 //        car.engine = new Engine(); // relatie de tip has-a //
@@ -56,5 +59,6 @@ Vehicle.vehicleCount = 3;
 
    vehicle1.accelerate (34.12);
     vehicle2.accelerate (34.12, 0.8);
+    new UFO().accelerate (130, 0.8);
     }
 }
