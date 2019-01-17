@@ -62,7 +62,7 @@ public class App
 //    new UFO().accelerate (130, 0.8);
 //
 //
-//    //polymrphism (an object can take multiple forms)
+//    //polymorphism (an object can take multiple forms)
 //    Vehicle ufo = new UFO();
 //
 //    //The type of the variable does not deterine the object's behaviour
