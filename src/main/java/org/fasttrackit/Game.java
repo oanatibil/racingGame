@@ -16,8 +16,7 @@ public class Game {
 
     }
 
-    private void addTracks()
-    {
+    private void addTracks() {
 
         Track track1 = new Track("highway", 300);
         Track track2 = new Track("seaside", 100);
@@ -29,11 +28,24 @@ public class Game {
     private void displayAvailableTracks() {
 
         System.out.println("Available tracks:");
-        System.out.println(tracks[0].getName());
-        System.out.println(tracks[1].getName());
+//        System.out.println(tracks[0].getName());
+//        System.out.println(tracks[1].getName());
 
+        //classic for loop
+//        for (int i = 0; i < tracks.length; i++) {
+//
+////if object is different than null
+//            if (tracks[i] != null) {
+//                System.out.println(tracks[i].getName());
+//
+//            }
+//        }
+        //enhanced for / "for-each"
+    for (Track track: tracks){
+        if (track != null){
+            System.out.println(track.getName());
+
+        }
     }
-
-
-
+    }
 }
